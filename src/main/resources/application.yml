@@ -1,9 +1,9 @@
 server:
-  port: $PORT
-
+  port: ${port:8080}
 
 spring:
   datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: ${APPLICATION_DB_URL}
     username: ${APPLICATION_DB_USERNAME}
     password: ${APPLICATION_DB_PASSWORD}
