@@ -5,17 +5,17 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-    
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
- 
-      - name: Generate env
+
+      - name: Generate system.properties
         run:
           echo "java.runtime.version=11" >> system.properties
-      
+
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
