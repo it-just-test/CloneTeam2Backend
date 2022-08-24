@@ -3,10 +3,13 @@ server:
 
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
     url: ${APPLICATION_DB_URL}
     username: ${APPLICATION_DB_USERNAME}
     password: ${APPLICATION_DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
   jpa:
     hibernate:
       ddl-auto: update
