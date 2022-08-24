@@ -1,6 +1,7 @@
 server:
   port: $PORT
 
+
 spring:
   datasource:
     url: ${APPLICATION_DB_URL}
