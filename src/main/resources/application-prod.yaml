@@ -2,8 +2,6 @@ server:
   port: ${port:8080}
 
 spring:
-  profiles:
-    active: prod
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: ${APPLICATION_DB_URL}
