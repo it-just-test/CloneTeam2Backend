@@ -51,4 +51,7 @@ tasks.named('test') {
 
 jar {
     enabled = false
+    manifest {
+        attributes('Main-Class': 'com.sparta.cloneteam2backend.CloneTeam2BackendApplication')
+    }
 }
